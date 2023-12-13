@@ -13,7 +13,7 @@ def index():
         if not api_key:
             return "Please provide a valid API key."
 
-        url = f"https://newsapi.org/v2/everything?q={query}&from=2023-11-13&sortBy=publishedAt&apiKey={api_key}"
+        url = f"https://newsapi.org/v2/everything?q={query}&from=2023-11-14&sortBy=publishedAt&apiKey={api_key}"
 
         try:
             response = requests.get(url)
